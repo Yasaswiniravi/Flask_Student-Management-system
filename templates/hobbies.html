@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Hobbies</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="form-box">
+    <h2>Student Hobbies</h2>
+
+    <form method="POST">
+        <textarea name="hobbies" rows="5" required>{{ data.get('hobbies','') }}</textarea>
+
+        <div class="button-group">
+            <a href="{{ url_for('college') }}">Previous</a>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

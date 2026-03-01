@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="form-box">
+    <h2>College Details</h2>
+
+    <form method="POST">
+        <input type="text" name="college_name" placeholder="College Name"
+               value="{{ data.get('college_name','') }}" required>
+
+        <input type="text" name="student_id" placeholder="Student ID Number"
+               value="{{ data.get('student_id','') }}" required>
+
+        <input type="text" name="branch" placeholder="Branch"
+               value="{{ data.get('branch','') }}" required>
+
+        <input type="text" name="college_address" placeholder="College Address"
+               value="{{ data.get('college_address','') }}" required>
+
+        <div class="button-group">
+            <a href="{{ url_for('parent') }}">Previous</a>
+            <button type="submit">Next</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

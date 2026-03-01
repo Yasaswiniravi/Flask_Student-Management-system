@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parent Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="form-box">
+    <h2>Parent Details</h2>
+
+    <form method="POST">
+        <input type="text" name="father_name" placeholder="Father Name"
+               value="{{ data.get('father_name','') }}" required>
+
+        <input type="text" name="occupation" placeholder="Father Occupation"
+               value="{{ data.get('occupation','') }}" required>
+
+        <input type="text" name="father_phone" placeholder="Father Phone Number"
+               value="{{ data.get('father_phone','') }}" required>
+
+        <input type="text" name="mother_name" placeholder="Mother Name"
+               value="{{ data.get('mother_name','') }}" required>
+
+        <input type="text" name="mother_phone" placeholder="Mother Phone Number"
+               value="{{ data.get('mother_phone','') }}" required>
+
+        <input type="text" name="address" placeholder="Parent Address"
+               value="{{ data.get('address','') }}" required>
+
+        <div class="button-group">
+            <a href="{{ url_for('basic') }}">Previous</a>
+            <button type="submit">Next</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

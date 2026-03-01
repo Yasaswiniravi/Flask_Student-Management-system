@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background: #ffffff;
+    padding: 40px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #2a5298;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2a5298;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button-group a {
+    flex: 1;
+    text-align: center;
+    background: #777;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-group a:hover {
+    background: #555;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4e73df;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2e59d9;
+}
+
+.link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #4e73df;
+    font-weight: bold;
+}
